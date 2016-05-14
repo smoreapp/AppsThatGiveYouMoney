@@ -62,9 +62,9 @@
 /* #Typography
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 300; }
+		font-weight: 600; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
+	h1 { font-size: 64px; line-height: 50px; margin-bottom: 14px;}
 	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
 	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
 	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
@@ -267,14 +267,14 @@
   ================================================== */
 
 
-.highlighttable {
+.highlight {
   color: #f8f8f2;
   table-layout: fixed;
   white-space: nowrap;
   width:90%;
 }
 
-.highlighttable pre, .highlighttable code { display:block; margin:0; padding:0; background: none; overflow:auto; word-wrap: normal; }
+.highlight pre, .highlight code { display:block; margin:0; padding:0; background: none; overflow:auto; word-wrap: normal; }
 
 .highlight, .linenodiv {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWPQ1dU1BgABzQC7XXMTYQAAAABJRU5ErkJggg==);
@@ -282,11 +282,11 @@
   padding: 10px;
   margin-bottom:20px;
 }
-.linenodiv, .lineno { color: #ccc; }
+.gutter, .lineno { color: #ccc; }
 
-td.linenos { width: 40px; }
+td.gl { width: 40px; }
 
-.linenodiv {
+.gutter {
   border-right: none;
   padding: 10px;
   text-align: right;
@@ -470,37 +470,42 @@ html { box-sizing: border-box; }
 .border-black { border-color: #111111 !important; }
 .text-black   { color: #111111; }
 .text-black a { color: #111111; }
-.bg-black     { background-color: #111111 !important; }
+.bg-black     { background: #111111 !important; }
 
 .border-white { border-color: #f8f8f8 !important; }
 .text-white   { color: #f8f8f8; }
 .text-white a { color: #f8f8f8; }
-.bg-white     { background-color: #f8f8f8 !important; }
+.bg-white     { background: #f8f8f8 !important; }
 
-.border-blue { border-color: #49a7e9 !important; }
-.text-blue   { color: #49a7e9; }
-.text-blue a { color: #49a7e9; }
-.bg-blue     { background-color: #49a7e9 !important; }
+.border-teal { border-color: #33a39c !important; }
+.text-teal   { color: #33a39c; }
+.text-teal a { color: #33a39c; }
+.bg-teal     { background: #33a39c !important; }
 
-.border-green { border-color: #9bcf2f !important; }
-.text-green   { color: #9bcf2f; }
-.text-green a { color: #9bcf2f; }
-.bg-green     { background-color: #9bcf2f !important; }
+.border-light-blue { border-color: #9bcf2f !important; }
+.text-light-blue   { color: #9bcf2f; }
+.text-light-blue a { color: #9bcf2f; }
+.bg-light-blue     { background: #9bcf2f !important; }
 
-.border-purple { border-color: #c869bf !important; }
-.text-purple   { color: #c869bf; }
-.text-purple a { color: #c869bf; }
-.bg-purple     { background-color: #c869bf !important; }
+.border-blue { border-color: #336cad !important; }
+.text-blue   { color: #336cad; }
+.text-blue a { color: #336cad; }
+.bg-blue     { background: #336cad !important; }
 
-.border-orange { border-color: #fab125 !important; }
-.text-orange   { color: #fab125; }
-.text-orange a { color: #fab125; }
-.bg-orange     { background-color: #fab125 !important; }
+.border-royal-blue { border-color: 3348b3 !important; }
+.text-royal-blue   { color: 3348b3; }
+.text-royal-blue a { color: 3348b3; }
+.bg-royal-blue     { background: 3348b3 !important; }
 
-.border-turquoise { border-color: #0fbfcf !important; }
-.text-turquoise   { color: #0fbfcf; }
-.text-turquoise a { color: #0fbfcf; }
-.bg-turquoise     { background-color: #0fbfcf !important; }
+.border-purple { border-color: #4533b8 !important; }
+.text-purple   { color: #4533b8; }
+.text-purple a { color: #4533b8; }
+.bg-purple     { background: #4533b8 !important; }
+
+.border-smore { border-color: url(http://smoreapp.co/wp-content/uploads/2016/04/camping-modal.jpg) !important; }
+.text-smore   { color: url(http://smoreapp.co/wp-content/uploads/2016/04/camping-modal.jpg); }
+.text-smore a { color: url(http://smoreapp.co/wp-content/uploads/2016/04/camping-modal.jpg); }
+.bg-smore     { background: url(http://smoreapp.co/wp-content/uploads/2016/04/camping-modal.jpg) !important; }
 
 
 /* ----- per-post colors! ----- */
@@ -508,50 +513,18 @@ html { box-sizing: border-box; }
   
   
   
-  nav .p-video { border-color: #0fbfcf; }
-  #video { background-color: #0fbfcf !important; color: #f8f8f8; }
-  #video a { color: #f8f8f8; }
-  #video .sectiondivider { color: #0fbfcf; }
+  nav .p-content { border-color: #f8f8f8; }
+  #content { background: #f8f8f8 !important; color: #111111; }
+  #content a { color: #111111; }
+  #content .sectiondivider { color: #f8f8f8; }
 
   
   
   
-  nav .p-updating { border-color: #c869bf; }
-  #updating { background-color: #c869bf !important; color: #f8f8f8; }
-  #updating a { color: #f8f8f8; }
-  #updating .sectiondivider { color: #c869bf; }
-
-  
-  
-  
-  nav .p-usage { border-color: #63BD2F; }
-  #usage { background-color: #63BD2F !important; color: #f8f8f8; }
-  #usage a { color: #f8f8f8; }
-  #usage .sectiondivider { color: #63BD2F; }
-
-  
-  
-  
-  nav .p-details { border-color: #fab125; }
-  #details { background-color: #fab125 !important; color: #111111; }
-  #details a { color: #111111; }
-  #details .sectiondivider { color: #fab125; }
-
-  
-  
-  
-  nav .p-why { border-color: #49a7e9; }
-  #why { background-color: #49a7e9 !important; color: #f8f8f8; }
-  #why a { color: #f8f8f8; }
-  #why .sectiondivider { color: #49a7e9; }
-
-  
-  
-  
-  nav .p-intro { border-color: #f8f8f8; }
-  #intro { background-color: #f8f8f8 !important; color: #111111; }
+  nav .p-intro { border-color: url(img/apps-to-save-money.jpg) no-repeat 50% 0; }
+  #intro { background: url(img/apps-to-save-money.jpg) no-repeat 50% 0 !important; color: #111111; }
   #intro a { color: #111111; }
-  #intro .sectiondivider { color: #f8f8f8; }
+  #intro .sectiondivider { color: url(img/apps-to-save-money.jpg) no-repeat 50% 0; }
 
 
 
@@ -560,7 +533,7 @@ html { box-sizing: border-box; }
 code, pre { font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
 
 /* spesifically inline code */
-code {
+code, pre {
   background: rgba(255,255,255,0.2);
   display: inline;
   word-wrap: break-word;
@@ -576,7 +549,7 @@ pre {
   word-wrap: break-word;
 }
 
-.highlighttable { margin:20px 5%; }
+.highlight { margin:20px 5%; }
 
 
 /* ----- base elements ----- */
@@ -699,13 +672,14 @@ nav ul li:hover, nav ul li.active {
   display:block;
   width:100%;
   min-height:300px;
-  padding:210px 0;
+  padding:30px 0;
   background:url(img/bgnoise.png);
   /* generated noise from noisetexturegenerator.com */
 }
 
 .section:first-of-type {
     padding-top: 140px;
+    padding-bottom: 140px;
 }
 
 
@@ -786,7 +760,7 @@ nav ul li:hover, nav ul li.active {
 .longlist { font-size: 14px !important; }
 .longlist li { margin-bottom: 3px; }
 
-
+/*----- -----*/
 
 /* ----- fork on github banner ----- */
 #forkongithub a {
@@ -856,7 +830,7 @@ nav ul li:hover, nav ul li.active {
 	.container h4 { font-size: 18px; }
 
 
-  .section { padding:130px 0; }
+  .section { padding:50px 0; }
   .sectiondivider {
     width:200px;
     height:200px;
@@ -885,3 +859,16 @@ nav ul li:hover, nav ul li.active {
   }
 }
 
+#intro{
+	min-height: 436px;
+	
+}
+
+@media only screen and (max-width: 768px) {
+	#intro{
+		background: #fff;
+		min-height: 200px;
+		background-position: right;
+
+	}
+	}

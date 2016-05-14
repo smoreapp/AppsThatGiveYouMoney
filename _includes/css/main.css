@@ -11,7 +11,7 @@ html { box-sizing: border-box; }
 .border-{{c[0]}} { border-color: {{ c[1] }} !important; }
 .text-{{c[0]}}   { color: {{ c[1] }}; }
 .text-{{c[0]}} a { color: {{ c[1] }}; }
-.bg-{{c[0]}}     { background-color: {{ c[1] }} !important; }
+.bg-{{c[0]}}     { background: {{ c[1] }} !important; }
 {% endfor %}
 
 /* ----- per-post colors! ----- */
@@ -20,7 +20,7 @@ html { box-sizing: border-box; }
   {% capture bg %}{% if site.colors[node.bg] %}{{ site.colors[node.bg] }}{% else %}{{ node.bg }}{% endif %}{% endcapture %}
   {% capture fg %}{% if site.colors[node.color] %}{{ site.colors[node.color] }}{% else %}{{ node.color }}{% endif %}{% endcapture %}
   nav .p-{{id}} { border-color: {{ bg }}; }
-  #{{id}} { background-color: {{ bg }} !important; color: {{ fg }}; }
+  #{{id}} { background: {{ bg }} !important; color: {{ fg }}; }
   #{{id}} a { color: {{ fg }}; }
   #{{id}} .sectiondivider { color: {{ bg }}; }
 {% endfor %}
@@ -31,7 +31,7 @@ html { box-sizing: border-box; }
 code, pre { font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
 
 /* spesifically inline code */
-code {
+code, pre {
   background: rgba(255,255,255,0.2);
   display: inline;
   word-wrap: break-word;
@@ -47,7 +47,7 @@ pre {
   word-wrap: break-word;
 }
 
-.highlighttable { margin:20px 5%; }
+.highlight { margin:20px 5%; }
 
 
 /* ----- base elements ----- */
@@ -170,13 +170,14 @@ nav ul li:hover, nav ul li.active {
   display:block;
   width:100%;
   min-height:300px;
-  padding:210px 0;
+  padding:30px 0;
   background:url(img/bgnoise.png);
   /* generated noise from noisetexturegenerator.com */
 }
 
 .section:first-of-type {
     padding-top: 140px;
+    padding-bottom: 140px;
 }
 
 
@@ -257,7 +258,7 @@ nav ul li:hover, nav ul li.active {
 .longlist { font-size: 14px !important; }
 .longlist li { margin-bottom: 3px; }
 
-
+/*----- -----*/
 
 /* ----- fork on github banner ----- */
 #forkongithub a {
@@ -327,7 +328,7 @@ nav ul li:hover, nav ul li.active {
 	.container h4 { font-size: 18px; }
 
 
-  .section { padding:130px 0; }
+  .section { padding:50px 0; }
   .sectiondivider {
     width:200px;
     height:200px;
